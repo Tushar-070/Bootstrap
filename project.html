@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .navv {
+            background-color: rgb(8, 58, 88);
+
+        }
+
+        .fi {
+            text-align: center;
+            text-decoration: none;
+            padding: 4px 12px 0px;
+        }
+
+        .first {
+            text-decoration: none;
+        }
+
+        .iim {
+            padding: 6px 12px 0px;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: -7px;
+        }
+
+        .sch {
+            font-size: 14px;
+            font-weight: 500px;
+            font-family: mohr_altmedium;
+            letter-spacing: 0.5px;
+        }
+
+        .ic {
+            padding: 4px 12px 0px 12px;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        .ico {
+            padding: 5px 5px 0px;
+            margin-left: 5px;
+            font-size: 18px;
+            font-weight: 9white;
+
+        }
+
+        .logo {
+            text-align: center;
+
+        }
+
+        .cb {
+            padding-left: 70px;
+            width: 650;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .cb {
+                width: 100%;
+                padding-left: 0px;
+            }
+        }
+
+        .dancing {
+            /* margin-left: 110px; */
+            text-align: center;
+
+
+        }
+
+        .dev {
+            font-family: "Dancing Script", cursive;
+            font-size: 22px;
+            padding-top: 15px;
+        }
+
+        .lo {
+            background-color: rgb(8, 58, 88);
+            border-radius: 30px;
+            border: dashed 2px;
+            padding: 7px 15px;
+            color: white;
+        }
+
+        .lo:hover {
+            color: rgb(8, 58, 88);
+            border: dashed 2px;
+        }
+
+        .on {
+            color: rgb(8, 58, 88);
+            border: dashed 2px;
+            border-radius: 30px;
+            padding: 7px 15px;
+        }
+
+        .on:hover {
+            border: dashed 2px;
+            color: white;
+            background-color: rgb(8, 58, 88);
+
+        }
+
+        .cont {
+            background-color: rgb(8, 58, 88);
+            position: sticky;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .home {
+            margin-left: 105px;
+        }
+
+        .nav-item {
+            margin: -10px 1px;
+
+        }
+
+        .adm {
+            position: fixed;
+            z-index: 9;
+            bottom: 260px;
+            right: 15px;
+            border-radius: 20px;
+            background-color: red;
+            padding: 10px;
+        }
+
+        .leftico {
+            position: fixed;
+            top: 34%;
+            z-index: 999;
+        }
+
+        .leftico a {
+            text-align: center;
+            padding: 16px;
+            font-size: 14px;
+            display: block;
+            transition: 0.3s ease;
+        }
+
+        .leftico a:hover {
+            background-color: black;
+        }
+
+        .facebook {
+            background-color: rgb(8, 58, 88);
+            color: white;
+        }
+
+        .twitter {
+            color: white;
+            background-color: #55ACEE;
+        }
+
+        .insta {
+            color: white;
+            background-color: #dd4b39;
+
+        }
+
+        .youtube {
+            color: white;
+            background-color: #bb0000;
+        }
+
+        .rightico {
+            position: fixed;
+            bottom: 8px;
+            left: 94%;
+
+        }
+
+        .wha {
+            position: fixed;
+            bottom: 10px;
+            right: 8px;
+        }
+
+        .what {
+            border-radius: 50%;
+        }
+
+        .news {
+            border-radius: 0 0 0 10px;
+            background-color: #f44336;
+        }
+
+        .nee {
+            padding: 5px;
+            font-size: 17px;
+            text-align: center;
+            letter-spacing: 3px;
+            font-weight: normal;
+        }
+
+        .sl {
+            padding-top: 5px;
+            border-radius: 0 0 10px 0;
+            background-color: #083a58;
+        }
+
+        .up {
+            text-decoration: none;
+            font-weight: 400px;
+        }
+
+
+        .qq {
+            font-size: calc(1.3rem + .6vw);
+            font-family: mohr_altlight;
+            font-weight: 500px;
+            line-height: 1.2;
+            letter-spacing: 0.5;
+            color: #083a58;
+
+        }
+
+        .nation {
+            text-align: justify;
+            color: #444;
+            font-size: 19px;
+            letter-spacing: 0.5px;
+            line-height: 28px;
+            font-family: mohr_altregular;
+        }
+
+        .cbse {
+            text-align: justify;
+            color: #444;
+            font-size: 19px;
+            letter-spacing: 0.5px;
+            line-height: 28px;
+            font-family: mohr_altregular;
+        }
+
+        .mo {
+            background-color: #083a58;
+            color: white;
+            font-size: 16px;
+            font-family: mohr_altregular;
+            padding: 8px 18px;
+            border-radius: 44px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+
+        }
+
+        .mo:hover {
+            color: #ffd712;
+            background-color: #083a58;
+        }
+
+        .about_img {
+            position: relative;
+        }
+
+        .pic {
+            padding: 15px;
+            height: auto;
+            width: 100%;
+
+        }
+
+        .about_img::before {
+            content: "";
+            border-left: 8px solid#14213d;
+            border-top: 8px solid#f89e8c;
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            z-index: 3;
+
+        }
+
+        .about_img:after {
+            content: "";
+            border-right: 8px solid#f89e8c;
+            border-bottom: 8px solid #083a58;
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            bottom: 0;
+
+        }
+
+        .next {
+            background-color: #083a58;
+        }
+
+        .vision {
+            color: #ffd712;
+            font-weight: normal;
+            font-size: calc(1.3rem + .6vw);
+            line-height: 1.2;
+            padding-bottom: 8px;
+
+        }
+
+        .pr {
+            color: white;
+            font-size: 19px;
+            letter-spacing: 0.5;
+            line-height: 28px;
+        }
+
+        .ye {
+            background-color: #fca311;
+            color: white;
+            font-size: 17px;
+            font-family: mohr_altregular;
+            padding: 8px 18px;
+            border-radius: 44px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+
+        .ye:hover {
+            color: black;
+            background-color: #ff9e00;
+        }
+
+        .ch {
+            text-align: center;
+            color: #083a58;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            font-size: calc(1.275rem + .3vw);
+            background-color: white;
+            border: none;
+            margin-bottom: -15px;
+        }
+
+        .mr {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500px;
+            color: #0072bc;
+            letter-spacing: 0.5px;
+        }
+
+        .prime {
+            text-align: center;
+            line-height: 28px;
+            color: #555;
+            letter-spacing: 0.5px;
+            margin-top: -15px;
+            font-size: 18px;
+        }
+
+        .ne {
+            background-color: #083a58;
+            color: white;
+            font-size: 16px;
+            font-family: mohr_altregular;
+            padding: 8px 18px;
+            border-radius: 44px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            margin-left: 30%;
+
+        }
+
+        .ne:hover {
+            color: #ffd712;
+            background-color: #083a58;
+        }
+
+        .lis {
+            list-style-type: none;
+            padding: 15px 45px 45px 45px;
+        }
+
+        .upcoming {
+            text-align: center;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .neww {
+            position: absolute;
+            left: 16px;
+            top: 127px;
+        }
+
+        .s {
+            min-height: 600px;
+            border: 1px solid;
+
+        }
+
+        .wings {
+            color: #095482;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .pre {
+            text-align: center;
+            margin-top: 200px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .pp {
+            opacity: 0.6;
+        }
+
+        .gallery {
+            color: #095482;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .latest {
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .gal {
+            border-radius: 5px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+        }
+
+        .gne {
+            background-color: #083a58;
+            color: white;
+            font-size: 16px;
+            font-family: mohr_altregular;
+            padding: 8px 18px;
+            border-radius: 44px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            margin-left: 45%;
+        }
+
+        .gne:hover {
+            color: #ffd712;
+            background-color: #083a58;
+        }
+
+        .topp {
+            color: yellow;
+            text-align: center;
+            font-size: 28px;
+            font-weight: normal;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            padding: 50px 0px 0px;
+        }
+
+        .ag {
+            text-align: center;
+            color: white;
+        }
+
+        .score {
+            background-color: #083a58;
+        }
+
+        .Shrikant {
+            border: 1px;
+            border-radius: 10px;
+            margin-top: 12px;
+        }
+
+        .mrr {
+            font-size: 25px;
+            margin-top: 0px;
+            margin-bottom: 2px;
+        }
+
+        .mrrr {
+            font-size: 19px;
+        }
+
+        .ritik {
+            border: 1px;
+            border-radius: 15px;
+        }
+
+        .rad {
+            border-radius: 5px 0 0 5px;
+            border: 1px;
+        }
+
+        .face {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: -6px;
+        }
+
+        .sec {
+            position: relative;
+            background-color: #e8fcff;
+            padding: 50px 0 130px;
+        }
+
+        .det {
+            color: #555;
+            font-size: 18px;
+            word-wrap: break-word;
+            width: 65%;
+        }
+
+        .cam {
+            text-decoration: none;
+            font-size: 28px;
+        }
+        .footer{background-color: #083a58;
+            padding: 90px 0px 20px 0px;
+        }
+        .foim{
+            border-radius: 5px;
+            width: 80%;
+            margin-bottom: 40px;
+        }
+        .contact{
+            color: white;
+            margin-top: px;
+            margin-bottom: 0px;
+        }
+        .con {
+            color: white;
+            margin-top: 1px;
+        }
+        .link{
+            /* text-align: center; */
+            padding: 0px 0px 0px 150px;
+        }
+        .li{color: #ffd712;
+            font-size: 28px;
+            margin-bottom: 0px;
+            /* text-align: center; */
+
+        }
+        .lin{color: white;
+            text-decoration: none;
+            /* margin-left: 120px; */
+            margin-top: 0px;
+        }
+        .lin:hover{color: #ffd712;}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid navv">
+        <div class="row">
+            <div class="col-lg-4 fi ">
+                <a href="#" class="text-white  first"><i class="fa-solid fa-mobile-screen-button ico"></i>
+                    +91-9711550317, +91-9873684317</a>
+            </div>
+            <div class="col-lg-4 iim">
+                <p class=" text-white sch">A GROUP OF SCHOOLS BY IIM AHMEDABAD ALUMNI</p>
+            </div>
+            <div class="col-lg-4 ic">
+                <a href="#" class="text-white ico"><i class="fa-solid fa-envelope-open"></i></a>
+                <a href="#" class="text-white ico"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white ico"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-white ico"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white ico"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="text-white ico"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 logo">
+                <img class="cb" src="logo.png" alt="logo">
+            </div>
+            <div class="col-xl-6 dancing">
+                <p class="dev">Developing Global Leaders of Tomorrow</p>
+                <button type="button" class="btn lo">Parent's Login</button>
+                <button type="button" class="btn on">Online Admission Form</button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg cont mt-2 niv ">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link home text-white" href="#">HOME</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">ADMISSIONS</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">ACADEMIC</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">ACHIEVMENTS</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">CBSE INFO</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">OUR BRANCHES</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">CAREER</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">DOWNLOAD TC</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="ind.jpeg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="bil.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="cong.jpeg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="fest.jpeg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="fest2.jpeg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="group.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="kas.jpeg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="show.jpeg" class="d-block" style="width:100%">
+            </div>
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+    <div class="adm">
+        <a href="#"><img src="demo.jpg" style="float: right;"></a>
+    </div>
+    <div class="leftico">
+        <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a class="insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></i></a>
+    </div>
+    <div class="rightico">
+        <img class="float-end " src="mascot.png" width="125%">
+    </div>
+    <div class="wha ">
+        <img class="float-end what" src="whatsapp.svg" width="7%">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 bg-danger news">
+                <h1 class="nee text-white">News Flash</h1>
+            </div>
+            <div class="col-md-10  sl">
+                <div id="head carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a class="text-white up" href="#">Upcoming branches- Faridabad - Sector-86 and Sector-39</a>
+                        </div>
+                        <div class="carousel-item ">
+                            <a class="text-white up" href="#">Founder and Chairman Shri Satya Vir Yadav and Director
+                                Shri Nitin Yadav were Conferred with ‘Achiever Award 2022 Singapore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 hh">
+                <h3 class="qq">EURO INTERNATIONAL SCHOOL, SEC-45</h3>
+                <p class="nation"><strong>Students are the actual assets of any nation; They are the foundation of a
+                        prosperous and
+                        modern nation ...</strong></p>
+                <p class="nation"><strong>We believe all children are gifted.</strong></p>
+                <p class="cbse">Euro International School Sector 45 - Affiliated to CBSE (Affiliation No.- 531398,
+                    School Code-41372)
+                </p>
+                <p class="cbse">We, at Euro, believe teaching students, to think critically is as important as teaching
+                    them how to
+                    succeed academically.</p>
+                <a class="btn mo" href="#">View More</a>
+            </div>
+            <div class=" col-lg-5 ">
+                <div class="about_img">
+                    <img class="pic" src="about.jpg">
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="next">
+        <div class="container pt-5 pb-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="vision">OUR VISION</h3>
+                    <p class="pr">"Pratibha Poshanam"</p>
+                    <p class="pr">Developing Global Leaders of Tomorrow</p>
+                    <p class="pr">To inspire, empower our learners so that they become strong successful individuals &
+                        universal citizens with 21st-century skills.</p>
+                    <p class="pr">By laying a superior foundation through quality education. Nurturing their talent to
+                        inquire, innovate and contribute in a meaningful way in the society.</p>
+                    <a class="btn ye" href="#">View More</a>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="vision mx-2">OUR MISSION</h3>
+                    <p class="pr mx-2">- To provide a platform for holistic development of our children</p>
+                    <p class="pr mx-2">- To instill confidence for the mind to be without fear & the head to be held
+                        high</p>
+                    <p class="pr mx-2">- To provide the best mentors & resources for academics, sports &
+                        extra-curricular
+                        activities</p>
+                    <p class="pr mx-2">- To include core values such as love, integrity & respect</p>
+                    <p class="pr mx-2">- To foster a culture of innovation & continuous learning</p>
+                    <a class="btn ye mx-2" href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card s">
+                    <div class="card-header ch">
+                        <h4>CHAIRMAN MESSAGE</h4>
+                    </div>
+                    <img class="card-img mx-auto d-block chair p-3" src="chair.jpg"><span class="mr">Mr. Satyavir
+                        Yadav</span>
+                    <div class="card-body">
+                        <p class="card-text prime">The prime motto of our school is to enhance children’s personality by
+                            making
+                            them confident. I always stress upon 100 percent participation of children in activities so
+                            that
+                            our children become outspoken and good communicators for fulfilling the dream of “Developing
+                            global Leaders”.</p>
+                        <a class="btn ne" href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card s">
+                    <div class="card-header ch">
+                        <h4>PRINCIPAL MESSAGE</h4>
+                    </div>
+                    <img class="card-img mx-auto d-block chair p-3" src="prin.jpg"><span class="mt-1 mr">Mr. Satyavir
+                        Yadav</span>
+                    <div class="card-body">
+                        <p class="card-text prime">“Teachers should build classroom climate where errors are welcome,
+                            student engagement is the norm, questioning is high and students gain reputations as
+                            effective
+                            learners”.</p>
+                        <a class="btn ne" href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card s">
+                    <div class="card-header ch">
+                        <h4>UPCOMING EVENTS</h4>
+                    </div><br><br>
+                    <hr>
+                    <ul class="lis">
+                        <li><span><img class="neww" src="new.png"></span><a class="upcoming" href="#">Admission Open For
+                                Session
+                                2023-24. To Register Call Us On 9711550317,
+                                9873684317 Or Click On Admissions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container">
+        <div class="row">
+            <p class="col-12 wings">OUR WINGS</p>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card bg-dark">
+                    <img class="card-img-top pp" src="pre.jpeg" height="250px">
+                    <div class="card-img-overlay">
+                        <p class="card-text pre">Pre-Primary Wing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card bg-dark">
+                    <img class="card-img-top pp" src="primary.jpeg" height="250px">
+                    <div class="card-img-overlay">
+                        <p class="card-text pre">Primary Wing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card bg-dark">
+                    <img class="card-img-top pp" src="middle.jpeg" height="250px">
+                    <div class="card-img-overlay">
+                        <p class="card-text pre">Middle Wing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card bg-dark">
+                    <img class="card-img-top pp" src="senior.jpeg" height="250px">
+                    <div class="card-img-overlay">
+                        <p class="card-text pre">Senior Wing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <div class="container">
+        <div class="row">
+            <p class="col-12 gallery">GALLERY</p>
+            <p class="col-12 latest">Latest Events</p>
+            <div class="col-lg-3 col-sm-6">
+                <img class="gal" src="event-gal-1.jpg" width="100%"><br><br>
+                <img class="gal" src="event-gal-8.jpg" width="100%">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img class="gal" src="event-gal-2.jpg" width="100%"><br>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img class="gal" src="event-gal-7.jpg" width="100%">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img class="gal" src="event-gal-6.jpg" width="100%"><br><br>
+                <img class="gal" src="event-gal-4.jpg" width="100%">
+            </div>
+        </div><br><br>
+        <a class="btn gne" href="#">View More</a>
+    </div>
+    <div class="score mt-5">
+        <div class="topp">
+            <p>OUR TOPPERS</p>
+            <p class="text-white ">Scored more than 90%</p>
+        </div>
+        <div id="test" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="aa.png">
+                                <h5>AADHYA AGRAWAL</h4>
+                                    <p>D/O SANTOSH AGRAWAL</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>96%</b></p>
+                            </div>
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="ab.png">
+                                <h5>ABHILASHA KUMARI</h4>
+                                    <p>D/O RAJESHWAR DAS</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>95.8%</b></p>
+                            </div>
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="chh.png">
+                                <h5>CHETANYA SEHRAWAT</h4>
+                                    <p>S/O MUKESH KUMAR</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>95%</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="ark.png">
+                                <h5>ARKIT JAINL</h4>
+                                    <p>S/O RAKESH KUMAR</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>93.2%</b></p>
+                            </div>
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="mas.png">
+                                <h5>MASUM </h4>
+                                    <p>D/O RANBIR</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>92.6%</b></p>
+                            </div>
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="sat.png">
+                                <h5>SATVIK THAKARE</h4>
+                                    <p>S/O YOGESH THAKARE</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>91.8%</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="kaj.png">
+                                <h5>KAJAL BHATI</h4>
+                                    <p>D/O MANBIR BHATI</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>91.8%</b></p>
+                            </div>
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="hem.png">
+                                <h5>HEMAN KHESHVA</h4>
+                                    <p>S/O JASWANT SINGH</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>91.4%</b></p>
+                            </div>
+                            <div class="col-lg-4 ag">
+                                <img class="mx-auto d-block" src="abh.png">
+                                <h5>ABHIGYA RAWAT</h4>
+                                    <p>D/O VIKASKUMAR</p>
+                                    <p class="mb-0">Class:-X </p>
+                                    <p class="mt-0"><b>90.8%</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#test" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#test" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div><br><br><br>
+    </div><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="gallery mb-0">TESTIMONIAL</p>
+                <p class="latest mt-0">Parent's Speak</p>
+                <div id="car" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 ">
+                                    <img class="Shrikant" src="Shrikant.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Mr. Shrikant and Ms. Meera Parents of
+                                        Amey</p>
+                                    <p class="mrrr">We are proud Parents, expressing our appreciation and gratitude to
+                                        all the
+                                        faculty members of Euro International School Sector-45, Gurugram for the
+                                        outstanding support we received during pandemic. Teachers have turned out to be
+                                        the real superheroes for our children. Imparting the best education, </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="Shrikant" src="swati.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Ms. Swati Soni and Mr. Rahul Soni Parents of Jinal Soni</p>
+                                    <p class="mrrr">We are happy and satisfied with the progress of our child. Teachers
+                                        are hard
+                                        working and give special attention to understand each child's personal need.We
+                                        acknowledge the efforts of the school staff and offer our sincere thanks to the
+                                        teachers and the management.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="Shrikant" src="ajay.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Mr. Ajay Mason and Ms. Pooja Mason Parents of Dhairya Mason</p>
+                                    <p class="mrrr">The school provides quality education supported by trained and
+                                        dedicated
+                                        teachers... We offer our gratitude to all the teachers and the staffs of Euro
+                                        International school for all the hard work and efforts. My son is now interested
+                                        to attend school and feels comfortable with the cheerful teachers. Thank you
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="Shrikant" src="siribabu.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Mr. Siribabu and Mrs. Rashmi Parents of Harshika K</p>
+                                    <p class="mrrr">Euro International School, Sector 45 is very satisfying as the
+                                        School is
+                                        providing progressive and fun learning . I am very happy to see my child evolve,
+                                        grow and blossom into the person she truly is. The different ways to nurture the
+                                        children through cultural performances and activities has overwhelmed us.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="Shrikant" src="sankalp.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Mr. Sankalp Sharma Father of Manjari and Agrim</p>
+                                    <p class="mrrr">I heartily congratulate the Principal, teachers, staff and students
+                                        for the
+                                        panoramic display of creativity, colours, courage and culture in the annual
+                                        function 2022. It fairly reflected the hardwork, dedication, perseverance and
+                                        patience of all teachers, staff and students involved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <p class="gallery mb-0">ALUMNI</p><br><br>
+                <div id="carr" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="ritik p-2 mx-3" src="ritik.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Ritik Madan</p>
+                                    <p class="mt-1">B.Tech IIT Roorkee</p>
+                                    <p class="mrrr">Ritik Madan was one of the prominent student of Euro International
+                                        Sector-45. He
+                                        has successfully completed his B.Tech in Electrical Engineering from IIT
+                                        Roorkee. We wish him for his future endeavors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="ritik p-2 mx-3" src="yamin.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Yamin Yaquoob</p>
+                                    <p class="mt-1">Corporate Relation and Placement Coordinator (IIM Kozhikode)</p>
+                                    <p class="mrrr">Yamin had a spectacular communication skills after completing his
+                                        schooling from Euro International he worked on his skills again and now he is
+                                        placed and working as a corporate Relation and Placement coordinator in IIM
+                                        Kozhikode. Euro International School wishes him all the success, health, wealth
+                                        in his life.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="ritik p-2 mx-3" src="lakshay.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Mr. Lakshay Dagar</p>
+                                    <p class="mt-1">B.Tech (IIT Delhi)</p>
+                                    <p class="mrrr">After completion of his XII from Euro International School, he got
+                                        an admission in IIT Delhi. Now he is a successful Engineer and working smoothly.
+                                        He made his parents and teachers proud. We wish him all the happiness and
+                                        success throughout his life.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="ritik p-2 mx-3" src="shallu.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Dr. Shallu Bedi</p>
+                                    <p class="mt-1">MBBS (SGT University, Gurugram)</p>
+                                    <p class="mrrr">She was the medical student in Euro International School. she was
+                                        very energetic among others. She was very keen to find out the results of every
+                                        experiment since childhood. This was the result which led her to choose medical
+                                        field. We wish her every success in her life.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="ritik p-2 mx-3" src="ravi.jpeg" width="90%">
+                                </div>
+                                <div class="col-lg-8">
+                                    <p class="mrr">Ravi Yadav</p>
+                                    <p class="mt-1">MBA from IIM Udaipur</p>
+                                    <p class="mrrr">Ravi yadav was one of the brightest student in class. He used to ask
+                                        so many doubts and had a clear path. Now he has successfully completed his MBA
+                                        from IIM Udaipur and got placed successfully. We wish him all happiness and
+                                        success in his life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carr" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carr" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="score mt-5">
+        <div class="topp">
+            <p>SOCIAL MEDIA</p>
+            <p class="text-white ">Social Media Platforms</p>
+        </div>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="rad bg-white">
+                        <p class="face">Facebook</p>
+                        <iframe class="p-3" src="http://127.0.0.1:5500/project.html" width="100%"
+                            height="500px"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="rad bg-white">
+                        <p class="face">Twitter</p>
+                        <iframe class="p-3" src="https://euroschoolsec45ggn.com/Admission.aspx" width="100%"
+                            height="500px"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="rad bg-white">
+                        <p class="face">IT Training Institute</p>
+                        <iframe class="p-3" src="https://ittrainingclasses.in/" width="100%" height="500px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="container">
+            <div class="row">
+                <p class="col-12 gallery">CAMPUSES</p>
+                <p class="col-12 latest">EURO Group Of Schools</p>
+                <div id="tr" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="sec45.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Sec. 45, Gurugram
+                                                9582333317,9873684317
+                                                eurosch45@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="sec10.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Sec. 10, Gurugram
+                                                9643891317,9873114317
+                                                eurosch10@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="kanina.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Kanina <br>
+                                                8199901849,9468454217
+                                                euroschoolkanina@gmail.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="rewari.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Rewari
+                                                8199901840,9416399317
+                                                eurorewari@yahoo.in</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="dharuhera.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Rewari
+                                                8199901840,9416399317
+                                                eurorewari@yahoo.in</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="bptp.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                BPTP Tower, Sec. 37 D, Gurugram
+                                                9582645317,9643890317
+                                                euro37d@yahoo.in
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="euro109.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Sector-109 Gurugram
+                                                964392317,9971444317
+                                                euro109ggn@yahoo.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="67D.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Sector-67D Gurugram
+                                                964392317,9971444317
+                                                euro67dggn@yahoo.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="euro84.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Sector-84 Gurugram
+                                                8826748317,8826194317
+                                                euro84ggn@yahoo.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="bhiwadi.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                Bhiwadi-Alwar Road,
+                                                Village- Husingpur, Silarpur Road, Bhiwadi
+                                                9467662317, 9711804872
+                                                eurobhiwadi@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="euro51.jpg">
+                                        <div class="card-body">
+                                            <p class="card-text det">Euro International School
+                                                K Block, Mayfield Garden, Sector 51, Gurugram
+                                                9873489317, 7042220317
+                                                euro51ggn@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="img-1.jpg">
+                                        <div class="card-body">
+                                            <a class="cam" href="#">Campus Tour</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tr" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tr" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="bg-white p-2 foim" src="logo (1).png"width="100%">
+                    <h5 class="contact">Address</h5>
+                    <p class="con">Block A, Greenwood City, Sector 45, <br>Gurugram, Haryana 122003</p>
+                        <br>
+                    <h5 class="contact">Phone</h5>
+                    <p class="con">+91-9582333317, <br>+91-9711550317,
+                        +91-9873684317
+                    </p><br>
+                    <h5 class="contact">E-mail</h5>
+                    <p class="con">eurogurgaon@yahoo.co.in</p>
+                </div>
+                <div class="col-lg-4 link">
+                    <h4 class="li">QUICK LINK</h4>
+                    <br><br>
+                    <p><a class="lin" href="#">Home</a></p>
+                    <p><a class="lin" href="#">Our Vision</a></p>
+                    <p><a class="lin" href="#">Our Mission</a></p>
+                    <p><a class="lin" href="#">Chaiman's Message</a></p>
+                    <p><a class="lin" href="#">Our Mentor</a></p>
+                </div>
+                <div class="col-lg-4 link">
+                    <h4 class="li">USEFUL LINK</h4>
+                    <br><br>
+                    <p><a class="lin" href="#">Event Gallery</a></p>
+                    <p><a class="lin" href="#">Principal’s Message</a></p>
+                    <p><a class="lin" href="#">Admission</a></p>
+                    <p><a class="lin" href="#">Career</a></p>
+                    <p><a class="lin" href="#">Contact Us</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<center><p style="font-weight: bold;">© Copyright 2016, Euro International School, Sec. 45 Gurugram | Powered by <span style="color: #0072bc; font-size: 17px;">CampusPro</span></p>
+</center>
+</html>
